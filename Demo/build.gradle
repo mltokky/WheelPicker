@@ -1,10 +1,10 @@
 apply plugin: 'com.android.application'
 android {
-    compileSdkVersion 28
+    compileSdk 34
     defaultConfig {
         applicationId "com.aigestudio.wheelpicker.demo"
         minSdkVersion 14
-        targetSdkVersion 28
+        targetSdkVersion 34
         versionCode 1
         versionName "1.0"
     }
@@ -14,6 +14,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    namespace 'com.aigestudio.wheelpicker.demo'
 }
 dependencies {
     implementation project(':WheelPicker')
